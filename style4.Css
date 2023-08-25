@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #00b39b;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        header img[name="main-header"] {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.125rem;
+            color: #4800b3;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background-color: #00b39b;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section.About {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section.About img {
+            max-width: 200px;
+            margin: 100px auto 100px auto;
+        }
+
+        section.About p#headerp {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .about-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .about-box {
+            background-color: #178aad;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        section.About .twoparagraphs {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section.About .p1,
+        section.About .p2 {
+            flex: 1;
+            padding: 20px;
+        }
+
+        section.Work {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        section.Work .work-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        section.Work .work1,
+        section.Work .work2 {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section.Work img {
+            max-width: 20%;
+            height: auto;
+        }
+
+        section.Work p#for1title,
+        section.Work p#for2title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        section#resume {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        section#resume h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        section#contact {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        section#contact h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        section#contact label {
+            font-weight: bold;
+        }
+
+        section#contact input[type="text"],
+        section#contact input[type="email"],
+        section#contact textarea {
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        section#contact .btn {
+            background-color: #00b39b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #178aad;
+            color: #eae1de;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #dc9c12;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="your-logo.png" alt="Your Logo" name="main-header">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Welcome to My Portfolio</h1>
+
+    <section class="About" id="about">
+        <img src="about-icon.png" alt="About">
+        <p id="headerp">About Me</p>
+        <div class="about-title">My Story</div>
+        <div class="about-box">
+            <div class="twoparagraphs">
+                <div class="p1">Paragraph 1 content goes here...</div>
+                <div class="p2">Paragraph 2 content goes here...</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Work" id="work">
+        <div class="work-container">
+            <div class="work1">
+                <img src="work1.jpg" alt="Work 1">
+                <p class="for1title">Work 1 Title</p>
+            </div>
+            <div class="work2">
+                <img src="work2.jpg" alt="Work 2">
+                <p class="for2title">Work 2 Title</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>My Resume</h2>
+        <!-- Add your resume content here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+           
